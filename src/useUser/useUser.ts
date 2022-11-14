@@ -9,8 +9,8 @@ import {
   UserCredentials,
   UserRegisterData,
 } from "../types/types";
-import useToken from "./useToken/useToken";
-import decodeToken from "./utils/decodeToken";
+import useToken from "../hooks/useToken/useToken";
+import decodeToken from "../hooks/utils/decodeToken";
 
 const useUser = () => {
   const dispatch = useAppDispatch();
