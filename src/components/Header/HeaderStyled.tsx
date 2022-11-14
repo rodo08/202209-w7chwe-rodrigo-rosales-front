@@ -7,11 +7,11 @@ const HeaderStyled = styled.header`
   align-items: center;
   height: 100px;
   background-color: #60f4e6;
-  border-bottom: #422202 solid 2px;
+  border-bottom: #000 solid 1px;
 
   h1 {
     font-weight: 900;
-    color: #422202;
+    color: #000;
   }
 `;
 export default HeaderStyled;
