@@ -11,13 +11,13 @@ const LoginForm = (): JSX.Element => {
             <input
               type="text"
               id="username"
-              placeholder="write your username here"
+              placeholder="Write your username here"
             />
             <label htmlFor="password">Password</label>
             <input
               type="text"
               id="username"
-              placeholder="write your password here"
+              placeholder="Write your password here"
             />
           </form>
           <button>Log in</button>
