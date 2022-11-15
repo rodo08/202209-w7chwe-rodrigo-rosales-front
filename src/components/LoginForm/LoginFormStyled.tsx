@@ -25,6 +25,15 @@ const LoginFormStyled = styled.div`
     padding-bottom: 20px;
   }
 
+  input {
+    border: none;
+  }
+
+  input[type="text"] {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
   label {
     text-align: initial;
     color: #000;
@@ -33,18 +42,27 @@ const LoginFormStyled = styled.div`
     height: 50px;
     border-color: #a4a4a4 solid 1px;
     border-radius: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
   }
 
   button {
-    width: 350px;
+    width: 290px;
     height: 50px;
     font-weight: 900;
     font-size: 16px;
     border-radius: 5px;
-
+    cursor: pointer;
     color: #fff;
     background-color: #000;
+  }
+
+  input::placeholder {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 5px;
+    line-height: 25px;
+    width: 100%;
   }
 `;
 
