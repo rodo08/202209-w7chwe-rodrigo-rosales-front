@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import LoginFormStyled from "./LoginFormStyled";
 
 const LoginForm = (): JSX.Element => {
@@ -20,7 +21,7 @@ const LoginForm = (): JSX.Element => {
               placeholder="Write your password here"
             />
           </form>
-          <button>Log in</button>
+          <Button text="Log in" />
         </div>
       </LoginFormStyled>
     </>
