@@ -1,16 +1,15 @@
-import { useAppDispatch } from "../app/hooks";
-import { openModalActionCreator } from "../redux/features/uiSlice/uiSlice";
 import {
   loginUserActionCreator,
   logoutUserActionCreator,
-} from "../redux/features/userSlice";
+} from "../../redux/features/userSlice";
+import { useAppDispatch } from "../../redux/hooks";
 import {
   JwtCustomPayload,
   UserCredentials,
   UserRegisterData,
-} from "../types/types";
-import useToken from "../hooks/useToken/useToken";
-import decodeToken from "../hooks/utils/decodeToken";
+} from "../../types/types";
+import useToken from "../useToken/useToken";
+import decodeToken from "../utils/decodeToken";
 
 const useUser = () => {
   const dispatch = useAppDispatch();
@@ -26,9 +25,7 @@ const useUser = () => {
           "Content-type": "application/json",
         },
       });
-      if (responseData.status === 401) {
-        dispatch(openModalActionCreator("Wrong credentials"));
-      }
+
       const { token } = await responseData.json();
       const loggedUser: JwtCustomPayload = decodeToken(token);
 
@@ -61,11 +58,6 @@ const useUser = () => {
           "Content-type": "application/json; charset=UTF-8",
         },
       });
-      if (responseData.status === 201) {
-        dispatch(
-          openModalActionCreator("Registered successfully! Please login")
-        );
-      }
     } catch (error: unknown) {
       throw new Error(
         `It's not possible to register: ${(error as Error).message}`
