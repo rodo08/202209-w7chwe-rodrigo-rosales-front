@@ -35,6 +35,8 @@ const LoginFormStyled = styled.div`
   }
 
   label {
+    letter-spacing: 0.1rem;
+
     text-align: initial;
     color: #000;
   }
@@ -43,6 +45,15 @@ const LoginFormStyled = styled.div`
     border-color: #a4a4a4 solid 1px;
     border-radius: 5px;
     padding-top: 2px;
+  }
+
+  input::placeholder {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 5px;
+    line-height: 25px;
+    width: 100%;
   }
 
   button {
@@ -54,15 +65,6 @@ const LoginFormStyled = styled.div`
     cursor: pointer;
     color: #fff;
     background-color: #000;
-  }
-
-  input::placeholder {
-    box-sizing: border-box;
-    font-size: 16px;
-    padding-top: 10px;
-    padding-left: 5px;
-    line-height: 25px;
-    width: 100%;
   }
 `;
 
