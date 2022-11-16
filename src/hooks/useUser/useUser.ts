@@ -29,7 +29,6 @@ const useUser = () => {
       if (responseData.status === 401) {
         dispatch(openModalActionCreator("Wrong credentials"));
       }
-
       const { token } = await responseData.json();
       const loggedUser: JwtCustomPayload = decodeToken(token);
 
