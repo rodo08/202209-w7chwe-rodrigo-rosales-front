@@ -19,7 +19,7 @@ const useUser = () => {
 
   const loginUser = async (userData: UserCredentials) => {
     try {
-      const responseData = await fetch(`{$url}/users/login`, {
+      const responseData = await fetch(`${url}/users/login`, {
         method: "POST",
         body: JSON.stringify(userData),
         headers: {
@@ -29,6 +29,7 @@ const useUser = () => {
       if (responseData.status === 401) {
         dispatch(openModalActionCreator("Wrong credentials"));
       }
+
       const { token } = await responseData.json();
       const loggedUser: JwtCustomPayload = decodeToken(token);
 

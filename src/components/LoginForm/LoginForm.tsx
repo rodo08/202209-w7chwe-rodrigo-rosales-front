@@ -61,8 +61,8 @@ const LoginForm = (): JSX.Element => {
               autoComplete="off"
               required
             />
+            <Button action={() => {}} text="Log in" />
           </form>
-          <Button text="Log in" />
         </div>
       </LoginFormStyled>
     </>
