@@ -8,6 +8,7 @@ const LoginFormStyled = styled.div`
   }
 
   .loginFormStyle__wrap {
+    border: solid 2px #1ad5c2;
     background-color: #60f4e6;
     padding-top: 0;
     margin: auto;
@@ -20,7 +21,7 @@ const LoginFormStyled = styled.div`
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    gap: 10px;
+    gap: 20px;
 
     padding-bottom: 20px;
   }
@@ -34,7 +35,13 @@ const LoginFormStyled = styled.div`
     padding-left: 5px;
   }
 
+  input {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
   label {
+    font-size: 18px;
     text-align: initial;
     color: #000;
   }
@@ -63,6 +70,23 @@ const LoginFormStyled = styled.div`
     cursor: pointer;
     color: #fff;
     background-color: #000;
+  }
+
+  .button__form:hover {
+    color: #1ad5c2;
+    background-color: #023034;
+  }
+
+  .login-form__signin {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .login-form__forgot-password {
+    color: #0b565d;
+    font-weight: 400;
+    text-decoration: none;
   }
 `;
 

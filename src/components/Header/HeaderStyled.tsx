@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const HeaderStyled = styled.header`
+  border-bottom: 2px solid #1ad5c2;
   display: flex;
   flex-direction: row;
   justify-content: center;
