@@ -38,6 +38,7 @@ const LoginForm = (): JSX.Element => {
         <div className="loginFormStyle__wrap">
           <form onSubmit={(event) => handleSubmit(event)}>
             <label htmlFor="username">Username</label>
+
             <input
               type="text"
               name="username"
@@ -61,8 +62,25 @@ const LoginForm = (): JSX.Element => {
               autoComplete="off"
               required
             />
+
+            <a
+              className="login-form__forgot-password"
+              href="https://media.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif"
+            >
+              Forgot your Password?
+            </a>
+
             <Button action={() => {}} text="Log in" />
           </form>
+          <span>
+            Not registered yet?{" "}
+            <a
+              className="login-form__signin"
+              href="https://media.tenor.com/yheo1GGu3FwAAAAd/rick-roll-rick-ashley.gif"
+            >
+              Sign up!
+            </a>
+          </span>
         </div>
       </LoginFormStyled>
     </>
