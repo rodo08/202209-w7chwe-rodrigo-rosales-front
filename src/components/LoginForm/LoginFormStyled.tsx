@@ -35,8 +35,6 @@ const LoginFormStyled = styled.div`
   }
 
   label {
-    letter-spacing: 0.1rem;
-
     text-align: initial;
     color: #000;
   }

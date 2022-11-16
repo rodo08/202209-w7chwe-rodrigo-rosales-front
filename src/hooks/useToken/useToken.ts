@@ -1,7 +1,7 @@
 import { useCallback } from "react";
-import { useAppDispatch } from "../../app/hooks";
 import decodeToken from "../utils/decodeToken";
 import { loginUserActionCreator } from "../../redux/features/userSlice";
+import { useAppDispatch } from "../../redux/hooks";
 
 const useToken = () => {
   const dispatch = useAppDispatch();

@@ -1,16 +1,16 @@
-import { useAppDispatch } from "../app/hooks";
-import { openModalActionCreator } from "../redux/features/uiSlice/uiSlice";
+import { openModalActionCreator } from "../../redux/features/uiSlice/uiSlice";
 import {
   loginUserActionCreator,
   logoutUserActionCreator,
-} from "../redux/features/userSlice";
+} from "../../redux/features/userSlice";
+import { useAppDispatch } from "../../redux/hooks";
 import {
   JwtCustomPayload,
   UserCredentials,
   UserRegisterData,
-} from "../types/types";
-import useToken from "../hooks/useToken/useToken";
-import decodeToken from "../hooks/utils/decodeToken";
+} from "../../types/types";
+import useToken from "../useToken/useToken";
+import decodeToken from "../utils/decodeToken";
 
 const useUser = () => {
   const dispatch = useAppDispatch();
